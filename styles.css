@@ -1,0 +1,86 @@
+:root {
+    --logo-color: #d5ac8c;
+    --dark-brown: #957c62;
+    --dark-brown-2: #956d62;
+    --light-brown: #ffead3;
+    --very-light-brown: #fff4e9;
+    --white: #ffffff;
+    --coral: #d59b8c;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.navbar-li-container {
+    display: flex;
+    background-color: var(--dark-brown-2);
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.nav-item {
+    font-size: 1.6rem;
+    font-weight: 600;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    margin: 0rem 4rem;
+    color: var(--light-brown);
+}
+
+.conocenos {
+    display: flex;
+    align-items: center;
+}
+
+.conocenos-container {
+    margin-left: 50%;
+    position: absolute;
+    color: #fff4e9;
+    padding: 2rem 2rem 2rem;
+}
+
+.conocenos-container h2 {
+    font-size: 4rem;
+}
+
+.conocenos-container p {
+    font-size: 2rem;
+    margin: 2rem 0;
+} 
+
+.btn-conocenos {
+    color: #957c62;
+    font-size: 2.4rem;
+    background-color: #fff4e9;
+    padding: 1.2rem;
+    border-radius: 3rem;
+    border: none;
+}
+
+.bg-conocenos {
+    object-fit: cover;
+    width: 100%;
+}
+
+.productos {
+    background-color: #ffead3;
+}
+
+.productos h2 {
+    font-size: 3.2rem;
+    text-align: center;
+    padding: 2rem;
+    color: #957c62;
+}
