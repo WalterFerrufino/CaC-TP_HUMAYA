@@ -17,6 +17,11 @@
 html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p, h2, h3 {
+    text-shadow: black .5px .5px;
 }
 
 .navbar-li-container {
@@ -28,7 +33,7 @@ html {
 }
 
 .nav-item {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     font-weight: 600;
     list-style: none;
 }
@@ -44,6 +49,10 @@ html {
     align-items: center;
 }
 
+.bg-conocenos {
+    height: calc(100vh - 145px);
+}
+
 .conocenos-container {
     margin-left: 50%;
     position: absolute;
@@ -52,21 +61,27 @@ html {
 }
 
 .conocenos-container h2 {
-    font-size: 4rem;
+    font-size: 8rem;
+    font-weight: 200;
 }
 
 .conocenos-container p {
-    font-size: 2rem;
-    margin: 2rem 0;
+    font-size: 2.8rem;
+    font-weight: 200;
+    margin: 6rem 0;
+    line-height: 4rem;
 } 
 
 .btn-conocenos {
     color: #957c62;
     font-size: 2.4rem;
     background-color: #fff4e9;
-    padding: 1.2rem;
+    padding: 1.6rem;
     border-radius: 3rem;
     border: none;
+    margin: auto;
+    display: block;
+    cursor: pointer;
 }
 
 .bg-conocenos {
@@ -75,31 +90,33 @@ html {
 }
 
 .productos {
-    background-color: var(--logo-color);
+    background-color: var(--dark-brown-2);
 }
 
 .productos h2 {
     font-size: 3.2rem;
     text-align: center;
-    padding: 2rem;
-    color: #957c62;
+    padding: 4rem;
+    color: var(--very-light-brown);
 }
 
 .btn-info {
     display: block;
     font-size: 1.6rem;
+    font-weight: 600;
     color: #957c62;
-    border-color: #957c62;
+    border: solid 4px #957c62;
     background-color: transparent;
     padding: 1rem;
     margin: auto;
+    cursor: pointer;
 }
 
 .productos-p {
     color: #ffead3;
-    font-size: 2rem;
+    font-size: 2.4rem;
+    line-height: 3rem;
     margin: 2rem 4rem;
-
 }
 
 .productos-p-bold {
@@ -126,7 +143,6 @@ html {
 
 .adm-container {
     display: flex;
-    position: absolute;
     width: 100%;
     padding: 4rem;
     background-color: var(--logo-color);
@@ -136,8 +152,242 @@ html {
     width: 60%;
 }
 
+.adm-p {
+    color: #ffead3;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin: 2rem 4rem;
+}
+
+.adm-p-bold {
+    color: var(--very-light-brown);
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin: 2rem 4rem;
+}
+
+.btn-info-adm {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: black;
+    border: solid 4px black;
+    background-color: transparent;
+    padding: 1rem;
+    margin: auto;
+    cursor: pointer;
+}
+
 .producto-img-adm {
     object-fit: cover;
     max-height: 330px;
 }
 
+.calidad {
+    background-color: var(--dark-brown-2);
+}
+
+.calidad h2 {
+    font-size: 4rem;
+    padding: 2rem;
+    text-align: center;
+    color: var(--very-light-brown);
+}
+
+.calidad-img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.organico-container, .tacc-container, .conservantes-container {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.calidad-img {
+    display: block;
+    width: 130px;
+    margin: auto;
+}
+
+.calidad-p {
+    color: #ffead3;
+    font-size: 2rem;
+    margin: 2rem 4rem;
+    text-align: center;
+}
+
+.contactanos h2 {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--very-light-brown);
+    background-color: var(--dark-brown-2);
+    padding-bottom: 2rem;
+}
+
+.contactanos-container {
+    display: flex;
+}
+
+.contactanos-img {
+    object-fit: cover;
+}
+
+.contactanos-form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 8rem 0;
+}
+
+.contactanos-form label {
+    color: var(--dark-brown);
+    font-size: 1.6rem;
+    font-weight: 200;
+    margin: 2rem 0 .4rem;
+    display: block;
+}
+
+.contactanos-form input, .contactanos-form textarea {
+    width: 100%;
+    display: block;
+    background-color: var(--dark-brown);
+    border: none;
+    padding: 1rem;
+}
+
+.contactanos-form textarea {
+    height: 8rem;
+}
+
+.contactanos-p {
+    color: var(--dark-brown);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.btn-enviar {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #957c62;
+    border: solid 4px var(--dark-brown);
+    background-color: transparent;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.recetas h2 {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--very-light-brown);
+    background-color: var(--dark-brown-2);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.recetas-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--dark-brown-2);
+    padding-bottom: 4rem;
+}
+
+.conitos-container, .pepas-container, .torta-container {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: var(--logo-color);
+    padding-bottom: 2rem;
+}
+
+.img-recetas {
+    width: 100%;
+    object-fit: cover;
+}
+
+.h3-recetas {
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--dark-brown-2);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.p-recetas {
+    font-size: 2rem;
+    padding: 0 4rem;
+    margin-bottom: 2rem;
+    color: var(--very-light-brown);
+    line-height: 3rem;
+}
+
+.btn-preparacion {
+    border: solid 4px var(--dark-brown-2);
+    color: var(--dark-brown-2);
+    background-color: transparent;
+    padding: 1rem;
+    width: auto;
+    display: block;
+    margin: auto;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+footer h2 {
+    font-size: 4rem;
+    text-align: center;
+    background-color: var(--dark-brown-2);
+    padding-bottom: 2rem;
+    color: var(--very-light-brown);
+}
+
+.footer-container {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    padding-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+.logo-footer {
+    display: flex;
+    margin: 4rem 0;
+    object-fit: contain;
+    width: 12%;
+    min-width: 100px;
+}
+
+.footer-menu-container, .footer-navegacion-container, .footer-redes-container, .footer-ubicacion-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    width: auto;
+}
+
+.h3-footer {
+    color: var(--logo-color);
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 4rem 0 1rem;
+}
+
+.a-footer {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--white);
+    text-decoration: none;
+    margin: 2rem 0;
+}
+
+.icons-footer {
+    width: 30px;
+}
+
+.map-footer {
+    height: 200px;
+}

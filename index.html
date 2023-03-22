@@ -9,12 +9,12 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav id="conocenos" class="navbar">
             <ul class="navbar-li-container">
                 <li class="nav-item"> <a class="nav-link" href="#"><img class="logo" src="./IMAGENES/Logo/LogoHumaya100x100.png" alt=""></a></li>
-                <li class="nav-item"> <a class="nav-link" href="#">Productos</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#productos">Productos</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="#">Locales</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="#">Contactos</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#contactanos">Contactanos</a> </li>
             </ul>
         </nav>
     </header>
@@ -30,7 +30,7 @@
             <img class="bg-conocenos" src="./IMAGENES/Central/imagenCentral.png" alt="">                
         </section>
         
-        <section class="productos">
+        <section id="productos" class="productos">
             <h2>PRODUCTOS</h2>
             <div class="ddlt-container">
                 <img class="producto-img" src="./IMAGENES/Productos/Producto1.png" alt="">
@@ -62,18 +62,107 @@
             <div class="adm-container">
                 <div class="adm">
                     <h2>ALFAJORES DE MAICENA</h2>
-                    <p class="productos-p">Alfajores de dulce con coco rallado, relleno con 2cm de pura dulzura. Pudiendo elegir entre dulce de leche tradicional, light o choconutt</p>
-                    <p class="productos-p-bold">Presentación en caja de 6 y 12 alfajores.</p>
-                    <button class="btn-info">+ INFO</button>
+                    <p class="adm-p">Alfajores de dulce con coco rallado, relleno con 2cm de pura dulzura. Pudiendo elegir entre dulce de leche tradicional, light o choconutt</p>
+                    <p class="adm-p-bold">Presentación en caja de 6 y 12 alfajores.</p>
+                    <button class="btn-info-adm">+ INFO</button>
                 </div>
                 <img class="producto-img-adm" src="./IMAGENES/Productos/Producto4.png" alt="">
+            </div>
+        </section>
+
+        <section class="calidad">
+            <h2>La mejor calidad para vos</h2>
+            <div class="calidad-img-container">
+                <div class="organico-container">
+                    <img class="calidad-img" src="./IMAGENES/SVG/Organico.png" alt="">
+                    <p class="calidad-p">100% ORGÁNICO</p>
+                </div>
+                <div class="tacc-container">
+                    <img class="calidad-img" src="./IMAGENES/SVG/LibreDeGluten.png" alt="">
+                    <p class="calidad-p">SIN <br> TACC</p>
+                </div>
+                <div class="conservantes-container">
+                    <img class="calidad-img" src="./IMAGENES/SVG/SinConservantes.png" alt="">
+                    <p class="calidad-p">SIN CONSERVANTES</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contactanos" class="contactanos">
+            <h2>Contáctanos</h2>
+            <div class="contactanos-container">
+                <img class="contactanos-img" src="./IMAGENES/ConocenosIMG.png" alt="">
+                <div class="contactanos-form">
+                    <p class="contactanos-p">Dejanos tu consulta y nuestro personal se pondrá en contacto a la brevedad</p>
+                    <form class="form" action="">
+                        <label for="">NOMBRE:</label>
+                        <input type="text">
+                        <label for="">E-MAIL:</label>
+                        <input type="text">
+                        <label for="">CONSULTA:</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </form>
+                    <button class="btn-enviar">ENVIAR</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="recetas" class="recetas">
+            <h2>Recetas</h2>
+            <div class="recetas-container">
+                <div class="conitos-container">
+                    <img class="img-recetas" src="./IMAGENES/RecetasConos.png" alt="">
+                    <h3 class="h3-recetas">CONITOS</h3>
+                    <p class="p-recetas">Una deliciosa opción para acompañar las meriendas, ese antojo de media noche o compartir con amigos.</p>
+                    <button class="btn-preparacion">PREPARACIÓN</button>
+                </div>                
+                <div class="pepas-container">
+                    <img class="img-recetas" src="./IMAGENES/RecetasGalletitas.png" alt="">
+                    <h3 class="h3-recetas">PEPAS</h3>
+                    <p class="p-recetas">Las galletitas más tiernas y ricas, rellenas de dulce de leche, ideales para el mate y la hora del té</p>
+                    <button class="btn-preparacion">PREPARACIÓN</button>
+                </div>                
+                <div class="torta-container">
+                    <img class="img-recetas" src="./IMAGENES/RecetasTorta.png" alt="">
+                    <h3 class="h3-recetas">TORTA NUTT</h3>
+                    <p class="p-recetas">La torta de tres capas más sabrosa del mundo, combina una base de vainilla, dulce de leche y cubierta de choconutt</p>
+                    <button class="btn-preparacion">PREPARACIÓN</button>
+                </div>
             </div>
         </section>
 
     </main>
 
     <footer>
-        
+        <h2>Encontranos en:</h2>
+        <div class="footer-container">
+            <img class="logo-footer" src="./IMAGENES/Logo/LogoHumaya100x100.png" alt="">
+            <div class="footer-menu-container">
+                <h3 class="h3-footer">MENÚ</h3>
+                <a class="a-footer" href="#conocenos">Home</a>
+                <a class="a-footer" href="#productos">Productos</a>
+                <a class="a-footer" href="">Locales</a>
+                <a class="a-footer" href="#contactanos">Contactanos</a>
+            </div>  
+            <div class="footer-navegacion-container">
+                <h3 class="h3-footer">NAVEGACIÓN</h3>
+                <a class="a-footer" href="">Preguntas frecuentes</a>
+                <a class="a-footer" href="">Distribuidores</a>
+                <a class="a-footer" href="">Prensa</a>
+                <a class="a-footer" href="#recetas">Recetas exclusivas</a>
+            </div>
+            <div class="footer-redes-container">
+                <h3 class="h3-footer">REDES</h3>
+                <a class="a-footer" href=""><img class="icons-footer" src="./IMAGENES/instagram.png" alt=""></a>
+                <a class="a-footer" href=""><img class="icons-footer" src="./IMAGENES/facebook.png" alt=""></a>
+                <a class="a-footer" href=""><img class="icons-footer" src="./IMAGENES/tik-tok.png" alt=""></a>
+¿            </div>
+            <div class="footer-ubicacion-container">
+                <h3 class="h3-footer">UBICACIÓN</h3>
+                <a class="a-footer" href="">Montes de Oca 2356, CABA</a>
+                <iframe class="map-footer" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.039229286753!2d-58.37270998255616!3d-34.653712199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334aab78be889%3A0xe808082ff7311cac!2sAv.%20Montes%20de%20Oca%202356!5e0!3m2!1ses-419!2sar!4v1679507657892!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
     </footer>
 
 </body>
