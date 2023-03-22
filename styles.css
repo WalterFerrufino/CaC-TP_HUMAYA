@@ -75,7 +75,7 @@ html {
 }
 
 .productos {
-    background-color: #ffead3;
+    background-color: var(--logo-color);
 }
 
 .productos h2 {
@@ -84,3 +84,60 @@ html {
     padding: 2rem;
     color: #957c62;
 }
+
+.btn-info {
+    display: block;
+    font-size: 1.6rem;
+    color: #957c62;
+    border-color: #957c62;
+    background-color: transparent;
+    padding: 1rem;
+    margin: auto;
+}
+
+.productos-p {
+    color: #ffead3;
+    font-size: 2rem;
+    margin: 2rem 4rem;
+
+}
+
+.productos-p-bold {
+    color: var(--coral);
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin: 2rem 4rem;
+}
+
+.ddlt-container, .ddlsa-container, .dcn-container, .adm-container {
+    display: flex;
+}
+
+.producto-img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.ddlt, .ddlsa, .dcn {
+    width: 50%;
+    background-color: black;
+    padding: 4rem;
+}
+
+.adm-container {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    padding: 4rem;
+    background-color: var(--logo-color);
+}
+
+.adm {
+    width: 60%;
+}
+
+.producto-img-adm {
+    object-fit: cover;
+    max-height: 330px;
+}
+
