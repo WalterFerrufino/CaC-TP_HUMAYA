@@ -16,12 +16,12 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Martel', serif;
     scroll-behavior: smooth;
 }
 
 p, h2, h3 {
-    text-shadow: black .5px .5px;
+    text-shadow: black .2px .2px 40px;
 }
 
 .navbar-li-container {
@@ -96,7 +96,7 @@ p, h2, h3 {
 .productos h2 {
     font-size: 3.2rem;
     text-align: center;
-    padding: 4rem;
+    padding: 4rem 0 0;
     color: var(--very-light-brown);
 }
 
@@ -180,7 +180,6 @@ p, h2, h3 {
 
 .producto-img-adm {
     object-fit: cover;
-    max-height: 330px;
 }
 
 .calidad {
@@ -208,14 +207,16 @@ p, h2, h3 {
 
 .calidad-img {
     display: block;
-    width: 130px;
+    width: 100%;
+    max-width: 130px;
     margin: auto;
 }
 
 .calidad-p {
+    display: flex;
     color: #ffead3;
     font-size: 2rem;
-    margin: 2rem 4rem;
+    margin: 2rem;
     text-align: center;
 }
 
@@ -239,7 +240,7 @@ p, h2, h3 {
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding: 8rem 0;
+    padding: 8rem 4rem;
 }
 
 .contactanos-form label {
@@ -295,12 +296,14 @@ p, h2, h3 {
     justify-content: space-evenly;
     background-color: var(--dark-brown-2);
     padding-bottom: 4rem;
+    flex-wrap: wrap;
 }
 
 .conitos-container, .pepas-container, .torta-container {
     display: flex;
     flex-direction: column;
     width: 25%;
+    min-width: 300px;
     background-color: var(--logo-color);
     padding-bottom: 2rem;
 }
@@ -356,7 +359,8 @@ footer h2 {
 
 .logo-footer {
     display: flex;
-    margin: 4rem 0;
+    align-items: center;
+    margin: 4rem 0 0;
     object-fit: contain;
     width: 12%;
     min-width: 100px;
@@ -367,6 +371,11 @@ footer h2 {
     flex-direction: column;
     margin: 0 2rem;
     width: auto;
+}
+
+.footer-redes-container a {
+    display: flex;
+    justify-content: center;
 }
 
 .h3-footer {
@@ -391,3 +400,138 @@ footer h2 {
 .map-footer {
     height: 200px;
 }
+
+@media screen and (max-width: 1000px) {
+    .torta-container {
+        display: block;
+        width: 50%;
+        margin-top: 4rem;
+        transition: all .3s;
+    }
+    
+    .conocenos-container {
+        margin: 0;
+    }
+        
+    .productos-p {
+        color: #ffead3;
+        font-size: 1.6rem;
+        line-height: 3rem;
+        margin: 2rem 4rem;
+    }
+            
+}
+
+@media screen and (max-width: 768px) {
+    .productos h2 {
+        font-size: 2.4rem;
+    }
+    
+    .productos-p, .adm-p {
+        color: #ffead3;
+        font-size: 1.6rem;
+        line-height: 3rem;
+    }
+    
+    .productos-p-bold, .adm-p-bold {
+        font-size: 2rem;
+        color: var(--coral);
+    }
+    
+    .producto-img, .producto-img-adm {
+        display: none;
+    }
+    
+    .ddlt, .ddlsa, .dcn, .adm {
+        padding: 4rem;
+        width: 100%;
+        border-bottom: solid 2px var(--coral);
+        background-color: black;
+    }
+        
+    .adm-container {
+        padding: 0;
+    }
+        
+    .btn-info, .btn-info-adm {
+    color: #957c62;
+    border: solid 4px #957c62;
+    }
+
+    .calidad-img-container {
+        justify-content: space-evenly;
+        padding-bottom: 6rem;
+    }
+
+    .organico-container, .tacc-container, .conservantes-container {
+        margin: 0;
+        width: 25%;
+    }
+
+    .calidad-p {
+        margin: 0;
+        justify-content: center;
+    }
+
+    .contactanos-img {
+        display: none;
+    }
+
+    .h3-recetas {
+        font-size: 2rem;
+    }
+
+    .p-recetas {
+        font-size: 1.6rem;
+    }
+
+    .conitos-container, .pepas-container, .torta-container {
+        display: block;
+        width: 100%;
+        margin: 0;
+    } 
+}
+
+@media screen and (max-width: 520px) {
+    .conocenos-container h2 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .conocenos-container p {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .calidad-p {
+        font-size: 1.6rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        padding-top: 4rem;
+    }
+
+    .logo-footer, .h3-footer, .a-footer {
+        display: block;
+        margin: auto;
+    }
+
+    .h3-footer {
+        margin-top: 2rem;
+    }
+
+    .footer-redes-container a {
+        margin: 1rem;
+    }
+
+    .footer-ubicacion-container {
+        margin: 0;
+        width: 100%;
+    }
+
+    .footer-ubicacion-container iframe {
+        width: 100%;
+    }
+}
+
