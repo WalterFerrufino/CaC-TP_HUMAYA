@@ -23,6 +23,328 @@ html {
 }
 
 p, h2, h3 {
-    text-shadow: black .2px .2px 40px;
+    text-shadow: black 1px .2px 1.4px;
 }
 
+p {
+    line-height: 30px;
+}
+
+h3 {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .navbar-li-container {
+    left: 0;
+}
+
+.navbar {
+    background-color: var(--dark-brown-2);
+    position: fixed;
+    width: 100%;
+}
+
+#bar-btn, .logo {
+    display: inline;
+    background-color: var(--dark-brown-2);
+    align-items: center;
+}
+
+.logo {
+    padding: 2rem 10vw 0;
+}
+
+#bar-btn {
+    position: absolute;
+    right: 0;
+    padding: 4.5rem 2rem;
+    font-size: 3rem;
+    color: var(--very-light-brown);
+    cursor: pointer;
+
+}
+
+.navbar-li-container {
+    position: fixed;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #956d62;
+    transition: all .5s;
+}
+
+.navbar-li-container li a {
+    display: block;
+    font-size: 2rem;
+    color: var(--light-brown);
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.conocenos-container {
+    background-image: url(./IMAGENES/Central/imagenCentral.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--very-light-brown);
+    padding: 14rem 1rem
+     2rem;
+}
+
+.conocenos-container h2 {
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.conocenos-container p {
+    font-size: 1.6rem;
+}
+
+.btn-conocenos  {
+    background-color: transparent;
+    color: var(--very-light-brown);
+    font-size: 2rem;
+    border: solid 2px;
+    padding: 1.6rem;
+    border-radius: 50px;
+    display: block;
+    margin: 2rem auto 1rem;
+}
+
+.productos h2 {
+    font-size: 2.8rem;
+    background-color: var(--dark-brown);
+    color: var(--very-light-brown);
+    text-align: center;
+    padding: 2rem 0 1.6rem;
+}
+
+.productos-p, .adm-p {
+    font-size: 1.6rem;
+    color: var(--very-light-brown);
+    font-weight: 200;
+    margin: 1.8rem 0;
+    color: var(--very-light-brown);
+}
+
+.productos-p-bold, .adm-p-bold {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--coral);
+}
+
+.productos-h3 {
+    color: var(--coral);
+}
+
+.btn-info, .btn-info-adm {
+    border: solid 4px var(--very-light-brown);
+    color: var(--very-light-brown);
+    background-color: transparent;
+    padding: 1rem;
+    font-weight: 600;
+    margin: 2rem auto;
+    display: block;
+    cursor: pointer;
+}
+
+.ddlt-container {
+    background-image: url(./IMAGENES/Productos/Producto1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 1rem;
+    border-bottom: solid 3px var(--coral);
+}
+
+.ddlsa-container {
+    background-image: url(./IMAGENES/Productos/Producto2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 1rem;
+    border-bottom: solid 2.4px var(--coral);
+}
+
+.dcn-container {
+    background-image: url(./IMAGENES/Productos/Producto3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 1rem;
+    border-bottom: solid 3px var(--coral);
+}
+
+.adm-container {
+    background-image: url(./IMAGENES/Productos/Producto4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 1rem;
+    border-bottom: solid 3px var(--coral);
+}
+
+.calidad {
+    background-color: var(--light-brown);
+    padding: 1rem;
+}
+
+.calidad h2 {
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.calidad-img {
+    max-width: 15rem;
+    margin: 1rem auto 0;
+}
+
+.calidad-p {
+    margin: auto;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.calidad-img-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.organico-container, .tacc-container, .conservantes-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactanos {
+    padding: 1rem;
+    background-image: url(./IMAGENES/ConocenosIMG.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 1rem;
+    border-bottom: solid 3px var(--coral);
+}
+
+.contactanos h2 {
+    font-size: 2.8rem;
+    color: var(--very-light-brown);
+    text-align: center;
+}
+
+.contactanos-p {
+    font-size: 1.6rem;
+    color: var(--very-light-brown);
+}
+
+.form input, .form textarea {
+    display: block;
+    width: 100%;
+    background-color: var(--light-brown);
+}
+
+.form label {
+    color: var(--very-light-brown);
+}
+
+.form input {
+    margin-bottom: 1rem;
+    padding: .4rem;
+}
+
+.form textarea {
+    height: 6rem;
+    padding: .4rem;
+}
+
+.btn-enviar {
+    border: solid 4px var(--logo-color);
+    background-color: transparent;
+    color: var(--logo-color);
+    font-weight: 600;
+    padding: 1rem;
+    margin: 1rem auto;
+    display: block;
+}
+
+.recetas h2 {
+    color: var(--light-brown);
+    background-color: black;
+    font-size: 2.8rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.conitos-container, .pepas-container, .torta-container {
+    background-color: var(--logo-color);
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.img-recetas {
+    width: 100%;
+}
+
+.h3-recetas {
+    font-size: 2.8rem;
+    color: var(--dark-brown-2);
+}
+
+.p-recetas {
+    font-size: 1.6rem;
+    margin: 0 1rem;
+    color: var(--light-brown);
+}
+
+.btn-preparacion {
+    border: solid 4px var(--very-light-brown);
+    background-color: transparent;
+    color: var(--very-light-brown);
+    font-weight: 600;
+    padding: .8rem;
+    margin: 2rem auto 0;
+    display: block;
+}
+
+footer {
+    background-color: black;
+}
+
+.logo-footer {
+    display: block;
+    margin: auto;
+}
+
+.h3-footer, .a-footer {
+    display: block;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 2.8rem;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.h3-footer {
+    color: var(--logo-color);
+    font-size: 1.6rem;
+    font-weight: 200;
+    margin-top: 1.6rem;
+}
+
+.a-footer {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.map-footer {
+    width: 100%;
+    padding: 1rem;
+}
