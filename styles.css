@@ -91,11 +91,16 @@ h3 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 .conocenos-container {
     color: var(--very-light-brown);
-    padding: 14rem 1rem
-     2rem;
+    padding: 14rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .conocenos-container h2 {
@@ -105,6 +110,7 @@ h3 {
 
 .conocenos-container p {
     font-size: 1.6rem;
+    text-shadow: black 8px 8px 6px;
 }
 
 .btn-conocenos  {
@@ -237,6 +243,10 @@ h3 {
     border-bottom: solid 3px var(--coral);
 }
 
+.contactanos-container img {
+    display: none;
+}
+
 .contactanos h2 {
     font-size: 2.8rem;
     color: var(--very-light-brown);
@@ -359,6 +369,9 @@ footer h2 {
     .conocenos-container {
         margin-left: 50%;
     }
+    .conocenos h2 {
+        font-size: 4rem;
+    }
     .btn-conocenos {
         display: block;
         margin: 2rem auto 0;
@@ -432,7 +445,6 @@ footer h2 {
     .conocenos-container p {
         font-size: 2.4rem;
         line-height: 4rem;
-        text-shadow: black 8px 8px 6px;
     }
     .productos h2 {
         font-size: 4rem;
@@ -448,9 +460,13 @@ footer h2 {
     }
     .ddlt-container, .ddlsa-container, .dcn-container {
         padding: 0;
-        max-width: 100vw;
         display: flex;
         border-bottom: solid 3px var(--coral);
+        border-top: solid 3px var(--coral);
+        background-image: none;
+        align-items: center;
+        background-color: black;
+
     }
     .ddlt, .ddlsa, .dcn {
         background-color: black;
@@ -493,6 +509,9 @@ footer h2 {
     }
     .contactanos-container {
         display: flex;
+    }
+    .contactanos-container img {
+        display: block;
     }
     .contactanos-img {
         width: 75%;
@@ -552,4 +571,17 @@ footer h2 {
         display: block;
         font-size: 1.6rem;
     }
+    .footer-container {
+        justify-content: space-between;
+        padding: 0 4rem 4rem;
+    }
+    .logo-footer-container, .footer-menu-container, .footer-navegacion-container, .footer-redes-container, .footer-navegacion-container, .footer-ubicacion-container {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        max-height: 24rem;
+        align-items: start;
+    }
+
 }
