@@ -243,7 +243,7 @@ h3 {
     border-bottom: solid 3px var(--coral);
 }
 
-.contactanos-container img {
+.contactanos img {
     display: none;
 }
 
@@ -363,10 +363,6 @@ footer h2 {
 .map-footer {
     width: 100%;
     padding: 1rem;
-}
-
-.conocenos, .productos, .calidad, .contactanos, .recetas {
-    max-width: 100vw;
 }
 
 @media screen and (min-width:768px) {
