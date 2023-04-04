@@ -39,10 +39,6 @@ h3 {
     display: none;
 }
 
-#check:checked ~ .navbar-li-container {
-    left: 0;
-}
-
 .navbar {
     background-color: var(--dark-brown-2);
     position: fixed;
@@ -66,16 +62,20 @@ h3 {
     font-size: 3rem;
     color: var(--very-light-brown);
     cursor: pointer;
-
 }
 
 .navbar-li-container {
     position: fixed;
-    left: -100%;
+    left: 0;
     width: 100%;
     height: 100vh;
     background-color: #956d62;
+    opacity: .95;
     transition: all .5s;
+}
+
+.hidden, #check {         
+    left: -100%;
 }
 
 .navbar-li-container li a {
@@ -84,6 +84,7 @@ h3 {
     color: var(--light-brown);
     text-align: center;
     margin-top: 10vh;
+    text-shadow: black 4px 4px 6px;
 }
 
 .conocenos {
